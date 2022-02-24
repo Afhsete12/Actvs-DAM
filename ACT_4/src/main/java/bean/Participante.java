@@ -17,6 +17,7 @@ public class Participante {
 		this.h_entrada = h_entrada;
 		this.nombre = nombre;
 	}
+	
 	@XmlElement(name="entrada")
 	public String getH_entrada() {
 		return h_entrada;

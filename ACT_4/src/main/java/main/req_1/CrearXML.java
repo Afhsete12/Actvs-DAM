@@ -19,15 +19,27 @@ public class CrearXML {
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder db;
 		Document doc;
-			db = factory.newDocumentBuilder();
-			doc = db.newDocument();
-			Element concierto = doc.createElement("concierto");
-			doc.appendChild(concierto);
-			addInfoConcierto(concierto, doc);
-			Element participantes = doc.createElement("participantes");
-			concierto.appendChild(participantes);
-			infoPariticipante(participantes, doc);
-			guardar(doc);
+		db = factory.newDocumentBuilder();
+		doc = db.newDocument();
+		Element concierto = doc.createElement("concierto");
+		doc.appendChild(concierto);
+		addInfoConcierto(concierto, doc);
+		Element participantes = doc.createElement("participantes");
+		concierto.appendChild(participantes);
+		infoPariticipante(participantes, doc);
+		guardar(doc);
+	}
+
+	
+	private static void addInfoConcierto(Element concierto, Document doc) {
+		Element element = null;
+		String[][] arr = { { "fecha", "20-oct-2018" }, { "hora", "21:30" } };
+
+		for (int i = 0; i < 2; i++) {
+			element = doc.createElement(arr[i][0]);
+			element.appendChild(doc.createTextNode(arr[i][1]));
+			concierto.appendChild(element);
+		}
 	}
 
 	private static void guardar(Document doc) throws TransformerException {
@@ -42,11 +54,8 @@ public class CrearXML {
 		Element participante = null;
 		Element entrada = null;
 		Element grupo = null;
-		String[][] arr = {
-				{"entrada","21:30","grupo","Las Ardillas de Dakota"},
-				{"entrada","22:15","grupo","Fito y Fitipaldis"},
-				{"entrada","23:00","grupo","ColdPlay"}
-		};
+		String[][] arr = { { "entrada", "21:30", "grupo", "Las Ardillas de Dakota" },
+				{ "entrada", "22:15", "grupo", "Fito y Fitipaldis" }, { "entrada", "23:00", "grupo", "ColdPlay" } };
 		for (int i = 0; i < 3; i++) {
 			participante = doc.createElement("participante");
 			participantes.appendChild(participante);
@@ -59,14 +68,4 @@ public class CrearXML {
 		}
 	}
 
-	private static void addInfoConcierto(Element concierto, Document doc) {
-		Element element = null;
-		String[][] arr = {{"fecha","20-oct-2018"},{"hora","21:30"}};
-		
-		for (int i = 0; i < 2; i++) {
-			element = doc.createElement(arr[i][0]);
-			element.appendChild(doc.createTextNode(arr[i][1]));
-			concierto.appendChild(element);
-		}
-	}
 }
