@@ -30,8 +30,6 @@ public class CrearXML {
 		guardar(doc);
 	}
 	
-
-	
 	private static void addInfoConcierto(Element concierto, Document doc) {
 		Element element = null;
 		String[][] arr = { { "fecha", "20-oct-2018" }, { "hora", "21:30" } };

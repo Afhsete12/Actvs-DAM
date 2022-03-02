@@ -31,7 +31,6 @@ public class LeerXML {
 		System.out.println("Participan los siguentes grupos:");
 		Node nodoHijo = nodos.item(2);
 		runParticipantes(nodoHijo);
-		
 	}
 
 	private static void runParticipantes(Node nodoHijo) {
