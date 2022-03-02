@@ -26,9 +26,10 @@ public class CrearXML {
 		addInfoConcierto(concierto, doc);
 		Element participantes = doc.createElement("participantes");
 		concierto.appendChild(participantes);
-		infoPariticipante(participantes, doc);
+		infoPariticipantes(participantes, doc);
 		guardar(doc);
 	}
+	
 
 	
 	private static void addInfoConcierto(Element concierto, Document doc) {
@@ -50,20 +51,19 @@ public class CrearXML {
 		conversor.transform(fuente, resultado);
 	}
 
-	private static void infoPariticipante(Element participantes, Document doc) {
+	private static void infoPariticipantes(Element participantes, Document doc) {
 		Element participante = null;
 		Element entrada = null;
 		Element grupo = null;
-		String[][] arr = { { "entrada", "21:30", "grupo", "Las Ardillas de Dakota" },
-				{ "entrada", "22:15", "grupo", "Fito y Fitipaldis" }, { "entrada", "23:00", "grupo", "ColdPlay" } };
+		String[][] arr = { {"21:30","Las Ardillas de Dakota" },{"22:15","Fito y Fitipaldis"},{"23:00","ColdPlay"}};
 		for (int i = 0; i < 3; i++) {
 			participante = doc.createElement("participante");
 			participantes.appendChild(participante);
-			entrada = doc.createElement(arr[i][0]);
-			entrada.appendChild(doc.createTextNode(arr[i][1]));
+			entrada = doc.createElement("entrada");
+			entrada.appendChild(doc.createTextNode(arr[i][0]));
 			participante.appendChild(entrada);
-			grupo = doc.createElement(arr[i][2]);
-			grupo.appendChild(doc.createTextNode(arr[i][3]));
+			grupo = doc.createElement("grupo");
+			grupo.appendChild(doc.createTextNode(arr[i][1]));
 			participante.appendChild(grupo);
 		}
 	}
