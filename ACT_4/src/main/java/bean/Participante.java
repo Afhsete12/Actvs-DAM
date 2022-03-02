@@ -26,7 +26,8 @@ public class Participante {
 	public void setH_entrada(String h_entrada) {
 		this.h_entrada = h_entrada;
 	}
-
+	
+	@XmlElement(name="grupo")
 	public String getNombre() {
 		return nombre;
 	}
