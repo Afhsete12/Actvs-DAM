@@ -6,8 +6,9 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 
-import jaxb.entity.adrian.Concierto;
-import jaxb.entity.adrian.Participante;
+import req_02.jaxb.adrian.entity.Concierto;
+import req_02.jaxb.adrian.entity.Participante;
+
 
 public class ObjectToXML {
 	public static void main(String[] args) throws JAXBException {
