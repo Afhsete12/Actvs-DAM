@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<musico>
+    <nombre>Ramon</nombre>
+    <apellidos>Espina</apellidos>
+    <edad>43</edad>
+    <grupo>melendi</grupo>
+    <instrumentos>
+        <instrumento>
+            <material>madera</material>
+            <nombre>guitarrra</nombre>
+            <sonido>acustico</sonido>
+        </instrumento>
+        <instrumento>
+            <material>metal</material>
+            <nombre>microfono</nombre>
+            <sonido>acustico</sonido>
+        </instrumento>
+    </instrumentos>
+</musico>
