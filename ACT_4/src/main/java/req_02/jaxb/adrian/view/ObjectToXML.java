@@ -1,4 +1,4 @@
-package main.req_2;
+package req_02.jaxb.adrian.view;
 
 import java.io.File;
 
@@ -6,8 +6,8 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 
-import bean.Concierto;
-import bean.Participante;
+import jaxb.entity.adrian.Concierto;
+import jaxb.entity.adrian.Participante;
 
 public class ObjectToXML {
 	public static void main(String[] args) throws JAXBException {

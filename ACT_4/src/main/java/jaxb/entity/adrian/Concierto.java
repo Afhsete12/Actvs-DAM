@@ -1,4 +1,4 @@
-package bean;
+package jaxb.entity.adrian;
 
 import java.util.ArrayList;
 import java.util.List;

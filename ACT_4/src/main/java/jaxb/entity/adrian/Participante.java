@@ -1,4 +1,4 @@
-package bean;
+package jaxb.entity.adrian;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;

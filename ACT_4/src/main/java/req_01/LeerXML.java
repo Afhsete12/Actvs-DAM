@@ -1,4 +1,4 @@
-package main.req_1;
+package req_01;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
