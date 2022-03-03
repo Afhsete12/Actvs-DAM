@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<restaurant>
+    <ciudad>Ciudad Real</ciudad>
+    <clientes>
+        <cliente id="1">
+            <nombre>Homer</nombre>
+            <apellido>Simpson</apellido>
+            <edad>38</edad>
+        </cliente>
+        <cliente id="2">
+            <nombre>Lisa</nombre>
+            <apellido>Simpson</apellido>
+            <edad>8</edad>
+        </cliente>
+        <cliente id="3">
+            <nombre>Bart</nombre>
+            <apellido>Simpson</apellido>
+            <edad>11</edad>
+        </cliente>
+        <cliente id="4">
+            <nombre>Marge</nombre>
+            <apellido>Simpson</apellido>
+            <edad>35</edad>
+        </cliente>
+        <cliente id="5">
+            <nombre>Magie</nombre>
+            <apellido>Simpson</apellido>
+            <edad>3</edad>
+        </cliente>
+    </clientes>
+    <nombre>FosterÂ´s Hollywood</nombre>
+</restaurant>

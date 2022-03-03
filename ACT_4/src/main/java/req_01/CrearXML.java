@@ -47,6 +47,7 @@ public class CrearXML {
 		DOMSource fuente = new DOMSource(doc);
 		StreamResult resultado = new StreamResult(new File("concierto.xml"));
 		conversor.transform(fuente, resultado);
+		System.out.println("Archivo xml creado correctamente !!");
 	}
 
 	private static void infoPariticipantes(Element participantes, Document doc) {

@@ -32,18 +32,14 @@ public class Main {
 			
 			Restaurant ciudadreal = new Restaurant();
 			ciudadreal.setCiudad("Ciudad Real");
-			ciudadreal.setNombre("Foster´s Hollywood");
+			ciudadreal.setNombre("Foster's Hollywood");
 			
 			ciudadreal.getClientes().add(new Client(1, "Homer", "Simpson", 38));
 			ciudadreal.getClientes().add(new Client(2, "Lisa", "Simpson", 8));
 			ciudadreal.getClientes().add(new Client(3, "Bart", "Simpson", 11));
 			ciudadreal.getClientes().add(new Client(4, "Marge", "Simpson", 35));
 			ciudadreal.getClientes().add(new Client(5, "Magie", "Simpson", 3));
-			
-			
-			
-			
-			
+
 			m.marshal(ciudadreal, System.out);
 			m.marshal(ciudadreal, new File("restaurante_ciudad_real.xml"));
 		} catch (JAXBException e) {
