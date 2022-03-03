@@ -1,4 +1,4 @@
-package req_02.jaxb.alvaro.entity;
+package req_02.jaxb.alvaro.beans;
 
 import javax.xml.bind.annotation.XmlRootElement;
 

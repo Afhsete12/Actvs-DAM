@@ -1,4 +1,4 @@
-package req_02.jaxb.gonzalo.entity;
+package req_02.jaxb.gonzalo.beans;
 
 
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package req_02.jaxb.adrian.entity;
+package req_02.jaxb.adrian.beans;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;

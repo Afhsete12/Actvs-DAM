@@ -1,4 +1,4 @@
-package req_02.jaxb.gonzalo.view;
+package req_02.jaxb.gonzalo.main;
 
 import java.io.File;
 
@@ -7,8 +7,8 @@ import jakarta.xml.bind.JAXBContext;
 import jakarta.xml.bind.JAXBException;
 import jakarta.xml.bind.Marshaller;
 import jakarta.xml.bind.Unmarshaller;
-import req_02.jaxb.gonzalo.entity.Client;
-import req_02.jaxb.gonzalo.entity.Restaurant;
+import req_02.jaxb.gonzalo.beans.Client;
+import req_02.jaxb.gonzalo.beans.Restaurant;
 
 public class Main {
 

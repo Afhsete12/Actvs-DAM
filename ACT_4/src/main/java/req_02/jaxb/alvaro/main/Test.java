@@ -1,4 +1,4 @@
-package req_02.jaxb.alvaro.view;
+package req_02.jaxb.alvaro.main;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -10,8 +10,8 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 
-import req_02.jaxb.alvaro.entity.Instrumento;
-import req_02.jaxb.alvaro.entity.Musico;
+import req_02.jaxb.alvaro.beans.Instrumento;
+import req_02.jaxb.alvaro.beans.Musico;
 
 public class Test {
 

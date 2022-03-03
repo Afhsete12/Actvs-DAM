@@ -1,4 +1,4 @@
-package req_02.jaxb.adrian.view;
+package req_02.jaxb.adrian.main;
 
 import java.io.File;
 
@@ -6,8 +6,8 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 
-import req_02.jaxb.adrian.entity.Concierto;
-import req_02.jaxb.adrian.entity.Participante;
+import req_02.jaxb.adrian.beans.Concierto;
+import req_02.jaxb.adrian.beans.Participante;
 
 
 
